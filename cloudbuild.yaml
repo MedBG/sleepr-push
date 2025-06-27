@@ -8,7 +8,7 @@ steps:
       [
         'build',
         '-t',
-        'us-east4-docker.pkg.dev/sleepr-378423/reservations/production',
+        europe-west9-docker.pkg.dev/sleepr-464107/reservations/production,
         '-f',
         'apps/reservations/Dockerfile',
         '.'
@@ -18,7 +18,7 @@ steps:
     args:
       [
         'push',
-        'us-east4-docker.pkg.dev/sleepr-378423/reservations/production'
+        europe-west9-docker.pkg.dev/sleepr-464107/reservations/production,
       ]
 
   - name: 'gcr.io/cloud-builders/docker'
@@ -26,7 +26,7 @@ steps:
       [
         'build',
         '-t',
-        'us-east4-docker.pkg.dev/sleepr-378423/auth/production',
+        europe-west9-docker.pkg.dev/sleepr-464107/auth/production,
         '-f',
         'apps/auth/Dockerfile',
         '.'
@@ -36,7 +36,7 @@ steps:
     args:
       [
         'push',
-        'us-east4-docker.pkg.dev/sleepr-378423/auth/production'
+        europe-west9-docker.pkg.dev/sleepr-464107/auth/production,
       ]
 
   - name: 'gcr.io/cloud-builders/docker'
@@ -44,7 +44,7 @@ steps:
       [
         'build',
         '-t',
-        'us-east4-docker.pkg.dev/sleepr-378423/payments/production',
+        europe-west9-docker.pkg.dev/sleepr-464107/payments/production,
         '-f',
         'apps/payments/Dockerfile',
         '.'
@@ -54,7 +54,7 @@ steps:
     args:
       [
         'push',
-        'us-east4-docker.pkg.dev/sleepr-378423/payments/production'
+        europe-west9-docker.pkg.dev/sleepr-464107/payments/production,
       ]
 
   - name: 'gcr.io/cloud-builders/docker'
@@ -62,7 +62,7 @@ steps:
       [
         'build',
         '-t',
-        'us-east4-docker.pkg.dev/sleepr-378423/notifications/production',
+        europe-west9-docker.pkg.dev/sleepr-464107/notifications/production,
         '-f',
         'apps/notifications/Dockerfile',
         '.'
@@ -72,5 +72,5 @@ steps:
     args:
       [
         'push',
-        'us-east4-docker.pkg.dev/sleepr-378423/notifications/production'
+        europe-west9-docker.pkg.dev/sleepr-464107/notifications/production,
       ]
